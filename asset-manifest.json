@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mentenanta/static/css/main.c2e786aa.css",
+    "main.js": "/mentenanta/static/js/main.7c511508.js",
+    "static/js/483.58030115.chunk.js": "/mentenanta/static/js/483.58030115.chunk.js",
+    "static/media/background-image.png": "/mentenanta/static/media/background-image.c69789e2103d1da878f0.png",
+    "static/media/nav-logo.png": "/mentenanta/static/media/nav-logo.bb338f1d9fa367115717.png",
+    "index.html": "/mentenanta/index.html",
+    "main.c2e786aa.css.map": "/mentenanta/static/css/main.c2e786aa.css.map",
+    "main.7c511508.js.map": "/mentenanta/static/js/main.7c511508.js.map",
+    "483.58030115.chunk.js.map": "/mentenanta/static/js/483.58030115.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2e786aa.css",
+    "static/js/main.7c511508.js"
+  ]
+}
