@@ -22,11 +22,8 @@ function AppRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/termeni-si-conditii" element={<Termeni />} />
         <Route path="/prelucrare-date" element={<DataProcessing />} />
+        <Route path="*" element={<Home />} />
       </Route>
-      {/* Tot ce vine scris sub sunt pagini care nu contin header si footer */}
-      {/* <Route path="/admin" element={<AdminPanel />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} /> */}
     </Routes>
   );
 }
