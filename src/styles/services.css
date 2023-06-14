@@ -1,0 +1,52 @@
+.services {
+  background-color: #001f3f;
+}
+.services .service-title {
+  margin: 72px auto 12px auto;
+  color: #f4f3f3;
+}
+
+.services .service-row {
+  width: 100%;
+  min-height: 39vh;
+  color: #f4f3f3;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services .service-row .service {
+  max-width: 370px;
+  padding: 6px 12px;
+  justify-content: space-evenly;
+}
+
+.services .service-row .service li div {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.dark-blue {
+  background-color: #001f3f;
+}
+
+.light-blue {
+  background-color: #004e9f;
+}
+
+@keyframes appearFromCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.services .service-row .service li,
+.services .service-row .service div {
+  position: relative;
+  background-clip: text;
+  animation: appearFromCenter 0.7s ease-in-out;
+}

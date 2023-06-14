@@ -1,0 +1,114 @@
+.about {
+  background-color: #001f3f;
+  color: #fefefe;
+  font-size: 1.05em;
+  min-height: 92vh;
+}
+
+.about .about-wrapper {
+  max-width: 1116px;
+  margin: 0 auto;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 100%;
+}
+
+.about .about-wrapper h3 {
+  margin-left: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.about .about-wrapper .about-header {
+  margin-bottom: 12px;
+  background-color: #001f3f;
+  width: 100%;
+  justify-content: center;
+}
+.about .about-wrapper .about-header h1 {
+  margin-top: 72px;
+}
+.about .about-main {
+  justify-content: space-evenly;
+  height: 100%;
+}
+.about .about-main .first-row .row-content {
+  gap: 12px;
+}
+.about .about-main .first-row,
+.about .about-main .second-row {
+  padding: 6px 0;
+}
+
+.content-left {
+  opacity: 0;
+  animation: slide-in-left 0.8s ease-in-out forwards;
+  animation-delay: 0s;
+  max-width: 480px;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 0;
+  animation: slide-in-right 0.8s ease-in-out forwards;
+  animation-delay: 0.2s;
+  min-height: 344px;
+}
+
+.content-bottom {
+  opacity: 0;
+  animation: slide-in-bottom 0.8s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.content-right,
+.content-left,
+.content-bottom {
+  background-color: #004e9f;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .about .about-main .first-row .row-content {
+    flex-wrap: wrap;
+  }
+  .about .about-main {
+    padding: 6px;
+  }
+}

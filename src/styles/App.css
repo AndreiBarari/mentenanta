@@ -1,0 +1,45 @@
+@import "layout.css";
+@import "navigation.css";
+@import "home.css";
+@import "footer.css";
+@import "services.css";
+@import "termeni.css";
+@import "prelucraredate.css";
+@import "about.css";
+@import "contact.css";
+@import "FAQ.css";
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.animated-text {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.animated-text::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 4px;
+  background-color: #f8bc1a;
+  transition: width 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+.animated-text:hover::before {
+  width: 80%;
+}

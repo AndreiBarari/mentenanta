@@ -1,0 +1,12 @@
+.faq .faq-content {
+  margin: 72px auto 12px auto;
+  width: 90%;
+  gap: 24px;
+}
+.faq .faq-content .faq-card {
+  margin: 0 auto;
+  max-width: 1116px;
+  padding: 4px 8px;
+  border-bottom: 4px solid #004e9f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,77 @@
+.home {
+  gap: 24px;
+  height: 92vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(#000ed966, #000ed966), url("../assets/background-image.png");
+  animation: fade-in 1s linear forwards;
+}
+
+.home .home-description {
+  color: #f4f3f3;
+  margin: auto;
+  gap: 12px;
+  padding: 24px;
+  background-image: linear-gradient(#0c50aa66, #0c50aa66);
+}
+
+.home .home-description h1,
+.home .home-description h2,
+.home .home-description .home-offer h3 {
+  text-shadow: 2px 2px 2px #232427;
+}
+
+.home .home-offer {
+  margin-top: 24px;
+  align-items: end;
+  gap: 24px;
+}
+.home .home-offer .home-btn {
+  text-decoration: none;
+  padding: 6px 0;
+  text-align: center;
+  width: 120px;
+  height: 36px;
+  background-color: #f4f3f3;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  color: #001f3f;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+
+.home .home-offer .home-btn:hover {
+  color: #f4f3f3;
+  background-color: #0c50aa66;
+  border: 2px solid #f4f3f3;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home {
+  animation: fade-out 1s linear forwards;
+}
